@@ -8,17 +8,54 @@
 
     </head>
     <body>
-		<p id="foo">one more line</p>
+		<p class="foo"> one more line</p>
 		<input type="button" onclick="changeText()" value="click me" />
 
 
 		<script type="text/javascript">
 			function changeText() {
 				// alert("hi");
-				$("#foo").html("scott was here");
-				$("#foo").fadeOut();
+				$(".foo").html("scott was here");
+				$(".foo").fadeOut();
 			}
 		</script>
 
-    </body>
+
+		<p class="one"> another line </p>
+
+		<input type="button" onclick="changeColor()" value="click me too" />
+   
+		 <script type="text/javascript">
+			function changeColor() {
+				$(".one").css("color", "red");
+			}
+		
+		</script>
+
+
+
+
+
+		<p class="two"> herro </p>  
+
+		<input type="button" onclick="changeTextToo()" value="and me" />
+    
+                 <script type="text/javascript">
+                        function changeTextToo() {
+				$(".two").css("text-align":"center");
+			{
+		
+		</script>
+
+
+
+
+		<p class="three"> herpa derp </p>
+
+		<p class="four"> camels </p>
+
+		<p class="five"> ohmygawd </p> 
+
+ </body>
+
 </html>
