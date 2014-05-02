@@ -10,8 +10,14 @@
 	</head> 
 	<body> 
 
-<h1> Oliver Bielak </h3> 
+<h1 id="color"> Oliver Bielak </h1> 
 
+<img src="http://i.imgur.com/qERs8O4.jpg?1">
+
+<hr>
+
+<input type="button" onclick="changeColor()" value="Click for favorite color" />
+		
 <br> 
     
 <h3> About Me </h3> 
@@ -28,12 +34,23 @@
 
 <p> I have a brother and a sister </p> 
 
+<p id="fun"> [Social Security Number] </p>
+
+<input type="button" onclick="changeText()" value="Click for Social Security Number" />
+	<script type="text/javascript">
+		function changeText() {
+			$("#fun").html("lol jk");
+		}
+		function changeColor() {
+                        $("#color").css("color", "blue");
+		}
+	</script>	
+	
 <hr>
         
-<h3> Hobbies: </h3> 
+<h4> Hobbies: </h4> 
 
-<h4> Biking </h4>
-
+<p> Biking </p>
 <p> Guitar, drums, ukulele </p>
 <p> Listening to music </p>
 <p> Watching Netflix </p>
@@ -42,15 +59,15 @@
 <p> Hanging out with friends </p>
 <p> Trying to understand the universe </p>
 
-
+<hr>
 
 <h4> Favorite Sports: </h4>
 
-<p>Baseball (Go A's) </li> 
-<p>Basketball (Go Warriors) </li> 
->Football (Raiders and Niners, but mainly Raiders) </li>
-</ol> 
-
+<p>Baseball (Go A's) </p> 
+<p>Basketball (Go Warriors) </p> 
+<p>Football (Raiders and Niners, but mainly Raiders) </p>
+ 
+<hr>
     
 <h4> Random Facts: </h4> 
  
@@ -58,6 +75,9 @@
 <p>I will never get bored of pizza </p>
 <p>I have 2 cats </p>
 <p>I do not like Todd Helton (the bsaeball player) </p>
+
+<h4> Here is my Lyrics Page </h4>
+<a href="http://obielak.github.io/lyrics.html"> Lyrics Page </a> 
   
 <hr>
 
@@ -68,7 +88,7 @@
 
 <h4> Favorite Video </h4>
     
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Dd7FixvoKBw" frameborder="0" allowfullscreen></iframe>	
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dd7FixvoKBw" frameborder="0" allowfullscreen></iframe>	
 	</body> 
 
 </html> 
