@@ -1,9 +1,8 @@
 body {
   text-align:center;
   background-color:#eee;
-  font-family:helvetica;
+  font-family: Steiner; src: url('http://www.mediafont.com/storage/contents/10293/font.eot'); /* IE */ src: local('Steiner'), url('http://www.mediafont.com/storage/contents/10293/Steinerlight.ttf'); /* non-IE */;
   font-weight:200;
-  color:#F8F8F8 ;
 }
 
 h1 {
