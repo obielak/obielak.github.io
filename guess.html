@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Guessing Game </title>
+  </head>
+
+<body>
+  <script>
+    var answer = 6;
+    var guess = prompt("Enter Guess");
+
+    while (guess != answer) {
+      if (guess > answer) {
+        var guess = prompt("Your guess is too big!")
+	}
+		
+
+        else {
+	  var guess = prompt("Your guess is too small!")
+	}
+    }
+    
+    if (guess = answer) {
+      console.log(""+String(guess)+" is the correct answer!")
+    }
+ </script>
+</body>
+</html>
+    
