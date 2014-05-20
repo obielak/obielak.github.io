@@ -6,7 +6,9 @@
 
 <body>
   <script>
-    var answer = 6;
+    var answer = Math.random()*10;
+    var answer =  Math.ceil(4.1);
+    var answer = Math.floor((Math.random()*10)*1);
     var guess = prompt("Enter Guess");
 
     while (guess != answer) {
@@ -21,7 +23,7 @@
     }
     
     if (guess = answer) {
-      console.log(""+String(guess)+" is the correct answer!")
+      alert(""+String(guess)+" is the correct answer!")
     }
  </script>
 </body>
