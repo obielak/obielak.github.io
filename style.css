@@ -1,8 +1,17 @@
 body {
-  text-align:center;
   background-color:#eee;
-  font-family: Helvetica;
-  font-weight:200;
+  font-family: Satisfy, cursive;
+  font-weight:normal;
+  font-size:24px;
+  padding-top: 60px;
+	  text-align:center;
+ 	 padding:20px;
+	width:340px;
+	margin: 0 auto;
+
+	border:30px solid transparent;
+	border-image:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;
+}
 }
 
 h1 {
