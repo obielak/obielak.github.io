@@ -5,3 +5,5 @@ function changeColor() {
 	$("#color").css("color", "blue");
 }
 
+function guessingGame() { 
+	$(
