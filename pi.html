@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="utf-8" />
-  <head>
-    <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
-    <script type="text/processing" data-processing-target="targetcanvas">
-      void draw() {
-      size(400, 400);
-      stroke(0, 0, 0);
-      strokeWeight(3);
-      var xmargin = 20;
-      var ymargin = 380;
-      var total = 0;
-      var totalwords = "total dots";
-      var inside = 0;
-      var insidewords = "dots inside circle";
-      var pi = "Pi is";
 
-      for (var a = 0; a < 10000; a += 1) {
-      var randomX = random(xmargin, ymargin);
-      var randomY = random(xmargin, ymargin);
-      total += 1;
-      var pointdist = dist(randomX, randomY, 200, 200);
-      var distance = dist(200, 20, 200, 200);
-          if (pointdist < distance) {
+<head>
+  <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+  <script type="text/processing" data-processing-target="targetcanvas">
+    void setup() {
+      size(400, 400);
+      noStroke();
+
+    }
+
+    stroke(0, 0, 0);
+    strokeWeight(3);
+    var xmargin = 20;
+    var ymargin = 380;
+    var total = 0;
+    var inside = 0;
+
+    void draw() {
+      for (var a = 0; a < 10; a += 1) {
+        var randomX = random(xmargin, ymargin);
+        var randomY = random(xmargin, ymargin);
+        total += 1;
+        var pointdist = dist(randomX, randomY, 200, 200);
+        var distance = dist(200, 20, 200, 200);
+        if (pointdist < distance) {
           stroke(255, 0, 0);
           point(randomX, randomY);
           inside += 1;
-      }
-      if (pointdist > distance) {
+        }
+        if (pointdist > distance) {
           stroke(0, 0, 0);
           point(randomX, randomY);
+        }
+        var pi = (inside / total) * 4;
       }
 
-      }
+      fill(255, 255, 255);
+      stroke(0, 0, 0);
+      rect(10, 350, 120, 20);
 
       fill(0, 0, 0);
-      text(total, 291, 395);
-      text(totalwords, 329, 395);
-      text(inside, 19, 395);
-      text(insidewords, 51, 395);
-      text((inside / total) * 4, 202, 395);
-      }
-    </script>    
-  </head>
+      text("Pi equals" + " " + pi.toFixed(5), 20, 366);
+    };
+  </script>
+</head>
 
-  <body>
-    <canvas id="targetcanvas" width="400" height="400"></canvas>
-  </body>
+<body>
+  <canvas id="targetcanvas" width="400" height="400"></canvas>
+</body>
+
 </html>
+
+
